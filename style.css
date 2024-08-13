@@ -1,0 +1,275 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet');
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ }
+ .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+ }
+ .logo{
+    font-size: 25px;
+    color: yellow;
+    text-decoration: none;
+    font-weight: 700;
+ }
+ .navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+ }
+ .navbar a:hover,
+ .navbar a.active{
+    color: #fff ;
+ }
+ .home{
+   height: 100vh;
+   background: linear-gradient(-90deg, black 65%, black 35%);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 10%;
+ }
+ .home-image{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 500px;
+   height: 500px;
+   background: black;
+   border-radius: 50%;
+   border: 25px solid black;
+   outline: auto;
+ }
+ .home-image img{
+   position: relative;
+   bottom: 2px;
+   max-width: 300px;
+   justify-content: center;
+ }
+ .home-content{
+   max-width: 600px;
+   color: #fff;
+   text-align: right;
+ }
+ .home-content h1{
+   font-size: 55px;
+   line-height: 1.2;
+ }
+ .home-content h3{
+   font-size: 40px;
+   color: transparent;
+   -webkit-text-stroke: .5px #fff;
+   background-image: linear-gradient(yellow, yellow);
+   background-repeat: no-repeat;
+   -webkit-background-clip: text;
+   background-position: -410px 0;
+   animation: animateText 6s linear infinite;
+ }
+ @keyframes animateText{
+   0%, 95%, 100%{
+      background-position: -410px 0;
+   }
+   65%, 85% {
+      background-position: 0 0;
+   }
+ }
+
+ .home-content p{
+   font-size: 12px;
+   margin-top: 20px;
+   
+ }
+ .home-sci {
+   margin: 25px 0 40px;
+ }
+ .home-sci a {
+      display: inline-flex;
+      justify-self: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background: transparent;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      font-size: 20px;
+      color: #fff;
+      text-decoration: none;
+      margin-left: 12px;
+ }
+ .home-sci a:hover{
+   background: yellow;
+   color: #fff;
+   border-color: yellow;
+   box-shadow: 0 0 10px yellow;
+ }
+ .btn{
+   padding: 12px 35px;
+   background: yellow;
+   border-radius: 40px;
+   font-size: 17px;
+   color: black;
+   text-decoration: none;
+   font-weight: 600;
+   letter-spacing: 1px;
+   box-shadow: 0 0 10px yellow;
+   transition: .5s;
+ }
+ .btn:hover{
+   box-shadow: none;
+ }
+ .about{
+   padding: 60px 20px;
+   text-align: center;
+   background-color: black;
+}
+.about h2{
+   color: yellow;
+}
+.about p {
+   
+   max-width: 800px;
+   margin: 0 auto;
+   font-size: 1.2em;
+   color: #fff;
+   line-height: 2;
+}
+
+/* Portfolio Section */
+.portfolio {
+   background: black;
+}
+.portfolio h2{
+   color: yellow;
+   text-align: center;
+}
+
+.project-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   gap: 20px;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.project-item {
+   background: grey;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   max-width: 350px;
+   
+}
+
+.project-item h3 {
+   margin-bottom: 10px;
+   color: #333;
+   font-size: 1.5em;
+}
+
+.project-item p {
+   font-size: 1.1em;
+   color: black;
+}
+
+/* Contact Section */
+body{
+   font-family: Arial, sans-serif;
+   background-color: black;
+   margin: 0;
+   padding: 0;
+}
+.contact {
+    background-color: black; /* White background for the box */
+    padding: 30px;
+    margin: 50px auto;
+    border-radius: 10px;
+    max-width: 600px; /* Restrict the width of the contact form */
+    box-shadow: 0 0 10px #fff; /* Add a subtle shadow */
+    text-align: center; /* Center-align text within the section */
+}
+.contact h2{
+   font-size: 30px;
+   color: yellow;
+   text-align: center;
+}
+
+.contact p {
+   text-align: center;
+   font-size: 1.2em;
+   color: black;
+   background: grey;
+}
+
+.contact ul {
+   list-style: none;
+   text-align: center;
+   padding: 0;
+   margin: 20px 0;
+   background-color: grey;
+}
+
+.contact ul li {
+   font-size: 1.2em;
+   color: black;
+   margin-bottom: 10px;
+}
+
+.contact ul li a {
+   color: black;
+   text-decoration: none;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+.contact ul li a:hover {
+   text-decoration: underline;
+}
+
+form {
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 20px;
+   border-radius: 10px;
+   background: black;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px;
+   border-radius: 5px;
+   border: 1px solid black;
+   font-size: 1em;
+}
+
+form button {
+   display: block;
+   width: 100%;
+   padding: 10px;
+   background: #333;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   font-size: 1.2em;
+   cursor: pointer;
+}
+
+form button:hover {
+   background: #555;
+}
